@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#060606"
+    android:layout_margin="40dp"
+    android:layout_gravity="center"
+    android:id="@+id/rL2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="GAME OVER"
+            android:textStyle="bold"
+            android:id="@+id/tv2"
+            android:textColor="#ffffffff"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/score"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:layout_gravity="center"
+            android:textScaleX="1.1"
+            android:id="@+id/tv3"
+            android:textColor="#ffffffff"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="50dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="BEST:"
+            android:layout_marginTop="10dp"
+            android:textScaleX="1.1"
+            android:id="@+id/tv4"
+            android:textColor="#ffffffff"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="#060606"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnL"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@drawable/button_play"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnR"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_menu"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+
+</LinearLayout>

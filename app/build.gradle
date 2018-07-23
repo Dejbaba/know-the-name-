@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25'
+
+    defaultConfig {
+        applicationId "com.dejman.deji.knowthename"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 3
+        versionName "1.2"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res', 'src/main/res/Animations', 'src/main/res/anims', 'src/main/res/anim', 'src/main/res/layout-small', 'src/main/res/layout-normal', 'src/main/res/layout-large', 'src/main/res/layout-xlarge', 'src/main/res/mipmap', 'src/main/res/mipmap/sp_img']
+            resources.srcDirs = ['src/main/resources', 'src/main/resources/mipmap']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //testCompile 'junit:junit:4.12'
+    // compile 'com.google.android.gms:play-services-ads:10.2.6'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.google.android.gms:play-services-ads:7.8.0'
+    compile 'com.google.android.gms:play-services:7.8.0'
+   // compile 'com.google.android.gms:play-services-auth:7.8.0'
+   // compile 'com.google.android.gms:play-services-games:7.0.4'
+    compile project(path: ':BaseGameUtils')
+}
